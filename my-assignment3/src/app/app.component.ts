@@ -7,13 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   buttonWasClicked = false;
-  buttonClickCounter = 0;
   buttonClickCount = [];
 
   onButtonClick() {
-    this.buttonClickCounter++;
-    this.buttonClickCount.push(this.buttonClickCounter)
-    this.buttonWasClicked = true;
+    this.buttonClickCount.push(this.buttonClickCount.length + 1)
+    this.buttonWasClicked = !this.buttonWasClicked;
   }
 
 }
