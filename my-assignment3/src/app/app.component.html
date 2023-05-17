@@ -14,3 +14,4 @@
 
 <button (click)="onButtonClick()">Display details</button>
 <p *ngIf="buttonWasClicked">The button was clicked!</p>
+<p *ngFor="let num of buttonClickCount" [ngClass]="{aboveFour: num > 4}">{{ num }}</p>
