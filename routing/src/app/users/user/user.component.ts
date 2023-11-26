@@ -14,6 +14,7 @@ export class UserComponent implements OnInit, OnDestroy {
   constructor(private route: ActivatedRoute) {}
 
   ngOnInit() {
+    // console.log(this.route.snapshot);
     this.user = {
       id: this.route.snapshot.params['id'],
       name: this.route.snapshot.params['name'],
