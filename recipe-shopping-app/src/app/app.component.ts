@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   loadedTab = 'recipe-book';
-
-  onNavigate(tab: string) {
-    this.loadedTab = tab;
-  }
 }
